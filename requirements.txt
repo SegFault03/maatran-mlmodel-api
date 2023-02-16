@@ -1,0 +1,6 @@
+fastapi
+numpy
+joblib
+scikit-learn
+scipy
+pip==21.2.4
