@@ -20,6 +20,8 @@ The repo structure is as follows:
 <li>main.py: the source-code for the API deployed, built using FastAPI</li>
 <li>requirements.txt: contains the dependencies necessary for building and running the API (for both local and remote deployment)</li></p>
 
+## Instructions on building the API
+
 ### 1. Clone/fork the repository
 
 ```zsh
