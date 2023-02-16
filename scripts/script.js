@@ -20,7 +20,7 @@ function getData(event)
     let dbp = document.getElementById('dbp').value;
     let hr = document.getElementById('hr').value;
     let temp = document.getElementById('temp').value;
-    let data = {"data":[age,bs,sbp,dbp,hr,temp]};
+    let data = {"data":[age,sbp,dbp,bs,temp,hr]};
     let dataJson = JSON.stringify(data);
     event.preventDefault();
     fetch(`https://zxv5hi.deta.dev/predict?sample=${dataJson}`, requestOptions)
