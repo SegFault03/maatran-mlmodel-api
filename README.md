@@ -1,5 +1,11 @@
 <h1>Maatran MLmodel API</h1>
 <i>Author and Owner: Niladri Das</i>
+
+## Dependencies
+
+- Python 3.6 or above ( ideally python 3.10+ )
+- FastAPI v0.45.0 or above
+
 </br>
 <p>This repository contains the machine learning model (Pregnancy risk classifier) used 
 in the Maatran app. (here's the link to the repo containing the source code and packages for the app: <a href="https://github.com/SegFault03/Maatran"> Maatran Android app</a>)<br>
@@ -13,4 +19,35 @@ The repo structure is as follows:
 <li>index.html: the root HTML file for the web-page deployed</li>
 <li>main.py: the source-code for the API deployed, built using FastAPI</li>
 <li>requirements.txt: contains the dependencies necessary for building and running the API (for both local and remote deployment)</li></p>
+
+### 1. Clone/fork the repository
+
+```zsh
+git clone https://github.com/SegFault03/maatran-mlmodel-api
+```
+
+### 2. Create a Virtual Environment
+
+```zsh
+python3 -m venv ./venv
+```
+
+ - Alternatively, any other suitable way to create a virtual environment ( such as `virtualenv` or `conda` ) can be used as per convenience.
+
+ ### 3. Activate the Virtual Environment
+
+ - `zsh` or `bash`
+
+ ```zsh
+source ./venv/bin/activate
+ ```
+
+### 4. Install all Required Packages
+
+```zsh
+python3 -m pip install requirements.txt
+```
+
+You're good to go!
+
 API docs can be found <a href="https://zxv5hi.deta.dev/docs">here</a>.
