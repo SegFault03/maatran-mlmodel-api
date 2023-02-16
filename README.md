@@ -10,7 +10,7 @@
 <p>This repository contains the machine learning model (Pregnancy risk classifier) used 
 in the Maatran app. (here's the link to the repo containing the source code and packages for the app: <a href="https://github.com/SegFault03/Maatran"> Maatran Android app</a>)<br>
 You can interact with the API <a href="https://segfault03.github.io/maatran-mlmodel-api/">here</a>.
-<br>(Please note: You might have to wait a few seconds after clicking the 'submit' button upon filling up the form Please be patient)<br>
+<br>(Please note: You might have to wait a few seconds after clicking the 'submit' button upon filling up the form. Please be patient)<br>
 The repo structure is as follows:
 <ul><li><a href="https://github.com/SegFault03/maatran-mlmodel-api/tree/main/models">models</a>: contains the pickle files for the models deployed.</li>
 <li><a href="https://github.com/SegFault03/maatran-mlmodel-api/tree/main/scripts">scripts</a>: contains the JavaScript code for the web-page deployed</li>
