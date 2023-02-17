@@ -29,7 +29,21 @@ function getData(event)
     event.preventDefault();
     fetch(`https://zxv5hi.deta.dev/predict?sample=${dataJson}`, requestOptions)
   .then(response => response.text())
-  .then(prediction => {result.innerText=prediction.substring(2,prediction.lastIndexOf('"'));
-  result.style.display = "block";result_title.innerText = "Here's your prediction!";})
+  .then(prediction => {
+    let formatString = prediction.substring(2,prediction.lastIndexOf('"'));
+    formatString = formatString.charAt(0).toUpperCase() + formatString.slice(1);
+    result.innerText = formatString;
+    let getColor = formatString => {
+      if(formatString == "Low risk")
+      return "green";
+      else if(formatString == "Mid risk")
+      return "orange";
+      else
+      return "red";
+    }
+    result.style.backgroundColor = getColor(formatString);
+    result.style.display = "block";
+    result_title.innerText = "Here's your prediction!";
+  })
   .catch(error => console.log('error', error));
 }

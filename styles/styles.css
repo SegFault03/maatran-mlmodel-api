@@ -13,6 +13,7 @@ body{
     border-radius: 15px;
     padding: 15px;
     width: 40%;
+    max-width: 400px;
     margin: auto;
 }
 
