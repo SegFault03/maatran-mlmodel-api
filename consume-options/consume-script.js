@@ -9,7 +9,7 @@ var requestOptions = {
 };
 var data = {"data":[45,23,12,34,16,32]};
 var dataJson = JSON.stringify(data);
-fetch(`https://zxv5hi.deta.dev/predict?sample=${dataJson}`, requestOptions)
+fetch(`https://maatranapi-1-c9699936.deta.app/predict?sample=${dataJson}`, requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));

@@ -4,6 +4,12 @@ const result_div = document.getElementById('result-div');
 const result_title = document.getElementById('result-title');
 form.addEventListener("submit",getData);
 result_div.style.display = "none";
+window.onload = function()
+{
+    fetch(`https://maatranapi-1-c9699936.deta.app/sayhi`, requestOptions)
+    .then((response) => response.text())
+    .then((response) => console.log("API called successfully"))
+}
 var myHeaders = new Headers();
 myHeaders.append("Accept", "application/json");
 
@@ -27,10 +33,10 @@ function getData(event)
     let data = {"data":[age,sbp,dbp,bs,temp,hr]};
     let dataJson = JSON.stringify(data);
     event.preventDefault();
-    fetch(`https://zxv5hi.deta.dev/predict?sample=${dataJson}`, requestOptions)
+    fetch(`https://maatranapi-1-c9699936.deta.app/predict?sample=${dataJson}`, requestOptions)
   .then(response => response.text())
   .then(prediction => {
-    let formatString = prediction.substring(2,prediction.lastIndexOf('"'));
+    let formatString = prediction.substring(1,prediction.lastIndexOf('"'));
     formatString = formatString.charAt(0).toUpperCase() + formatString.slice(1);
     result.innerText = formatString;
     let getColor = formatString => {

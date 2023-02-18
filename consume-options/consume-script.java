@@ -16,7 +16,7 @@ import org.json.simple.JSONObject;
 public class deta {
     public static void sendRequest(String data) throws Exception {
         // The URL of the API endpoint
-        URL url = new URL("https://zxv5hi.deta.dev/predict/"+data);
+        URL url = new URL("https://maatranapi-1-c9699936.deta.app/predict/"+data);
 
         // Open an HttpURLConnection to the API endpoint
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
