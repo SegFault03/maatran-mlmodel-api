@@ -1,2 +1,2 @@
 runtime: python39
-entrypoint: uvicron main:app
+entrypoint: uvicorn main:app
