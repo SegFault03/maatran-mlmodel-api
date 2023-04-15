@@ -1,0 +1,1 @@
+{"id":"d6617fec-0313-4cf7-8bcd-a6eee4f38173","space":52179,"runtime":"python3.9","name":"maatran-mlmodel-api","path":"zxv5hi","project":"d0vo9nnu","account":"144798365827","region":"ap-south-1","deps":["fastapi","numpy","joblib","scikit-learn","scipy","pip==21.2.4"],"envs":null,"public":true,"log_level":"debug","cron":""}
