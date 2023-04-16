@@ -1,5 +1,4 @@
 from flask import Flask
-from flask_cors import CORS
 import joblib
 import json
 import numpy
@@ -9,7 +8,6 @@ model = joblib.load('models/pregnancy_risk_classifier.pkl')
 scaler = joblib.load('models/scaler.pkl')
 
 app = Flask(__name__)
-CORS(app)
 
 @app.route('/predict/<string:sample>', methods=['GET'])
 def getPrediction(sample) -> str:
